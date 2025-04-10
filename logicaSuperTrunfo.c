@@ -5,7 +5,6 @@
        // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     
        int  pontos_turisticos1, pontos_turisticos2;
-       int comp_pontosTuristicos, compPibpercapita, comp_populacao;
        int opcao, opcaoatributos;
        unsigned long int populacao1, populacao2;
    
@@ -35,19 +34,19 @@
        printf ("Para começar o jogo vamos começar cadastrando as cartas! \n"); 
        printf("Vamos digitar os dados da carta 1 \n"); 
       
-       printf("Digite o nome da cidade:\n");
+       printf("Digite o nome do País:\n");
        scanf(" %s", &nomepais1);
    
-       printf ("Digite a população da cidade \n");
+       printf ("Digite a população do País \n");
        scanf(" %lu", &populacao1);
    
-       printf ("Digite a area da cidade em Km² \n");
+       printf ("Digite a area do País em Km² \n");
        scanf("      %f", &area1);
    
-       printf ("Digite o pib da cidade \n");
+       printf ("Digite o pib do País \n");
        scanf("      %f", &pib1);
    
-       printf ("Digite a quantidade de Pontos Turisticos da cidade \n");
+       printf ("Digite a quantidade de Pontos Turisticos do País \n");
        scanf("      %i", &pontos_turisticos1);
    
        
@@ -56,19 +55,19 @@
        printf ("Vamos digitar os dados da carta 2 \n");
    
          
-       printf ("Digite o nome da cidade \n");
+       printf ("Digite o nome do País \n");
        scanf(" %s", &nomepais2);
    
-       printf ("Digite a população da cidade \n");
+       printf ("Digite a população do País \n");
        scanf(" %lu", &populacao2);
    
-       printf ("Digite a area da cidade em Km² \n");
+       printf ("Digite a area do País em Km² \n");
        scanf(" %f", &area2);
    
-       printf ("Digite o pib da cidade \n");
+       printf ("Digite o pib do País \n");
        scanf(" %f", &pib2);
    
-       printf ("Digite a quantidade de Pontos Turisticos da cidade \n");
+       printf ("Digite a quantidade de Pontos Turisticos do País \n");
        scanf(" %i", &pontos_turisticos2);
 
         //calculando densidade e Pib per Capita
@@ -84,7 +83,7 @@
         superpoder2 = populacao2 + area2 + pib2 + pontos_turisticos2 + pib_percapita2 + (1/densid_populacional2);
 
        printf ("Agora escolha qual atributo voce quer comparar.\n");
-       Printf ("1. População\n");
+       printf ("1. População\n");
        printf ("2. Area\n");
        printf ("3. PIB\n ");
        printf ("4. Pontos turisticos \n");
@@ -107,7 +106,7 @@
              printf ("O Pais Vencedor foi %s pois tem a maior população \n",nomepais2);
                
             } else {
-             Printf ("Houve um empate pois os atributos são iguais");
+             printf ("Houve um empate pois os atributos são iguais");
             }            
             break;
         case 2 :
@@ -122,7 +121,7 @@
              printf ("O Pais Vencedor foi %s pois tem a maior Area \n",nomepais2);
                
             } else {
-             Printf ("Houve um empate pois os atributos são iguais");
+             printf ("Houve um empate pois os atributos são iguais");
             }            
             break;
         case 3 :
@@ -137,13 +136,13 @@
              printf ("O Pais Vencedor foi %s pois tem o maior PIB \n",nomepais2);
                
             } else {
-             Printf ("Houve um empate pois os atributos são iguais");
+             printf ("Houve um empate pois os atributos são iguais");
             }            
             break;
         case 4:
         printf ("Você escolheu o atributo Pontos Turisticos \n");
-        printf ("O País %s , tem a quantidade de pontos turisticos de: %f \n", nomepais1, pontos_turisticos1);
-        printf ("O País %s , tem a quantidade de pontos turisticos de: %f \n", nomepais2, pontos_turisticos2);
+        printf ("O País %s , tem a quantidade de pontos turisticos de: %i \n", nomepais1, pontos_turisticos1);
+        printf ("O País %s , tem a quantidade de pontos turisticos de: %i \n", nomepais2, pontos_turisticos2);
             if ( pontos_turisticos1 > pontos_turisticos2)
             {
              printf ("O Pais Vencedor foi %s pois tem a maior quantidade de Pontos turisticos \n",nomepais1);
@@ -152,7 +151,7 @@
              printf ("O Pais Vencedor foi %s pois tem a maior Area \n",nomepais2);
                
             } else {
-             Printf ("Houve um empate pois os atributos são iguais");
+             printf ("Houve um empate pois os atributos são iguais");
             }            
             break;
         case 5 :
@@ -167,7 +166,7 @@
              printf ("O Pais Vencedor foi %s pois tem a menor Densidade Populacional \n",nomepais2);
                
             } else {
-             Printf ("Houve um empate pois os atributos são iguais");
+             printf ("Houve um empate pois os atributos são iguais");
             }            
             break;
         case 6 :
@@ -182,7 +181,7 @@
              printf ("O Pais Vencedor foi %s pois tem o maior PIB per Capita \n",nomepais2);
                
             } else {
-             Printf ("Houve um empate pois os atributos são iguais");
+             printf ("Houve um empate pois os atributos são iguais");
             }            
             break;
         case 7 :
@@ -197,19 +196,20 @@
              printf ("O Pais Vencedor foi %s pois tem o maior Super Poder \n",nomepais2);
                
             } else {
-             Printf ("Houve um empate pois os atributos são iguais");
+             printf ("Houve um empate pois os atributos são iguais");
             }            
             break;
         default:
         printf("Opção inválida. Tente novamente.\n");
-            break;
+        
         }
+        break;
         case 2 : 
-        printf ("As regras do jogo são: \n");
-        printf ("Primeiro voce tem que cadastar os atributos nas Cartas \n");
-        printf ("Escolha um dos atributos para fazer a comparação das cartas \n");
-        printf ("Vence a carta que tiver o melhor atributo \n");
-        printf (" Tenha um bom jogo e Divirta-se \n");
+        printf ("1.As regras do jogo são: \n");
+        printf ("2.Primeiro voce tem que cadastar os atributos nas Cartas \n");
+        printf ("3.Escolha um dos atributos para fazer a comparação das cartas \n");
+        printf ("4.Vence a carta que tiver o melhor atributo \n");
+        printf ("5.Tenha um bom jogo e Divirta-se \n\n");
             break;
         case 3 :
         printf ("Saindo....... \n");
@@ -221,6 +221,4 @@
          
        return 0;
     }
-   
-
-
+ 
